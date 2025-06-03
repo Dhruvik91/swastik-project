@@ -1,4 +1,3 @@
-
 "use client";
 import { motion } from 'framer-motion';
 import { ProductListingContainer } from "./ProductListingContainer";
@@ -9,7 +8,7 @@ export const ProductsContainer = () => {
           {/* Hero Section */}
           <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
             <div className="absolute inset-0 overflow-hidden">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1600&auto=format&fit=crop&q=60')] bg-cover bg-center opacity-10" />
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&auto=format&fit=crop&q=60')] bg-cover bg-center opacity-10" />
             </div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <motion.div
@@ -19,11 +18,11 @@ export const ProductsContainer = () => {
                 className="text-center"
               >
                 <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                  Discover Our Products
+                  Premium Construction Materials
                 </h1>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Explore our curated collection of premium products, designed to enhance your lifestyle
-                  and bring innovation to your everyday life.
+                  Your trusted source for high-quality cement and concrete products. We deliver excellence in construction materials, 
+                  ensuring strength, durability, and reliability for your building projects.
                 </p>
               </motion.div>
             </div>

@@ -1,15 +1,14 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Star, ShoppingCart, Heart } from 'lucide-react';
+import { Star, Heart } from 'lucide-react';
 import { Product } from '../constants/product.types';
 
 interface ProductCardProps {
   product: Product;
-  onAddToCart?: (product: Product) => void;
   onAddToWishlist?: (product: Product) => void;
 }
 
-export const ProductCard = ({ product, onAddToCart, onAddToWishlist }: ProductCardProps) => {
+export const ProductCard = ({ product, onAddToWishlist }: ProductCardProps) => {
   const {
     name,
     description,
@@ -19,7 +18,6 @@ export const ProductCard = ({ product, onAddToCart, onAddToWishlist }: ProductCa
     reviews,
     discount,
     isNew,
-    stock,
   } = product;
 
   const discountedPrice = discount ? price - (price * discount) / 100 : price;
@@ -88,18 +86,6 @@ export const ProductCard = ({ product, onAddToCart, onAddToWishlist }: ProductCa
               <span className="text-xl font-bold text-gray-900">${price.toFixed(2)}</span>
             )}
           </div>
-          {/* <button
-            onClick={() => onAddToCart?.(product)}
-            disabled={stock === 0}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors duration-300 ${
-              stock === 0
-                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                : 'bg-blue-500 text-white hover:bg-blue-600'
-            }`}
-          >
-            <ShoppingCart className="w-5 h-5" />
-            <span>{stock === 0 ? 'Out of Stock' : 'Add to Cart'}</span>
-          </button> */}
         </div>
       </div>
     </motion.div>
