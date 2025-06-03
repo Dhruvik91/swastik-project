@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ContactFormValues } from '../types/contact.types';
-import { CONTACT_INFO, FAQ_DATA, MAP_EMBED_URL } from '../constants/contact.constants';
+import { CONTACT_INFO, MAP_EMBED_URL } from '../constants/contact.constants';
 import { HeroSection } from '../components/HeroSection';
 import { ContactForm } from '../components/ContactForm';
 import { ContactInfo } from '../components/ContactInfo';
@@ -13,7 +12,7 @@ export const ContactContainer = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = async (values: ContactFormValues) => {
+  const handleSubmit = async () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
@@ -21,7 +20,7 @@ export const ContactContainer = () => {
       // Simulate form submission
       await new Promise(resolve => setTimeout(resolve, 1500));
       setSubmitStatus('success');
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

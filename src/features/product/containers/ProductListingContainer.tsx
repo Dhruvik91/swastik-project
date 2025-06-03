@@ -40,12 +40,7 @@ export const ProductListingContainer = () => {
     }
 
     return result;
-  }, [filter]);
-
-  const handleAddToCart = (product: Product) => {
-    // Implement cart functionality
-    console.log('Add to cart:', product);
-  };
+}, [filter]);
 
   const handleAddToWishlist = (product: Product) => {
     // Implement wishlist functionality
@@ -76,7 +71,6 @@ export const ProductListingContainer = () => {
           {filteredProducts.length > 0 ? (
             <ProductGrid
               products={filteredProducts}
-              onAddToCart={handleAddToCart}
               onAddToWishlist={handleAddToWishlist}
             />
           ) : (
