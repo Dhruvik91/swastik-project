@@ -10,19 +10,19 @@ export const ServiceCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="bg-gradient-to-r from-blue-500 to-cyan-400 rounded-2xl p-12 text-center text-white"
+          className="bg-gradient-to-r from-gray-700 to-gray-900 rounded-2xl p-12 text-center text-white"
         >
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Get Started?
+            Ready to Start Your Construction Project?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help transform your digital presence and achieve your goals.
+            Get in touch with our experts to discuss your cement and concrete requirements. We'll help you choose the right materials for your project.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-500 transition-all duration-200"
+            className="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-gray-900 transition-all duration-200"
           >
-            Contact Us
+            Request a Quote
           </Link>
         </motion.div>
       </div>
