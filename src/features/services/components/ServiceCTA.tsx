@@ -16,7 +16,7 @@ export const ServiceCTA = () => {
             Ready to Start Your Construction Project?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Get in touch with our experts to discuss your cement and concrete requirements. We'll help you choose the right materials for your project.
+            {`Get in touch with our experts to discuss your cement and concrete requirements. We'll help you choose the right materials for your project.`}
           </p>
           <Link
             href="/contact"
