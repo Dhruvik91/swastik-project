@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { ProcessCard } from './ProcessCard';
-import type { Process } from '../../../app/features/services/types';
+import { Process } from "../constants/types";
 
 interface ProcessSectionProps {
   processes: Process[];

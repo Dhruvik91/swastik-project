@@ -65,7 +65,7 @@ export const AboutContainer = () => {
               Our Journey
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Key milestones in our company's history
+              Key milestones in our company&apos;s history
             </p>
           </div>
           <div className="max-w-3xl mx-auto">

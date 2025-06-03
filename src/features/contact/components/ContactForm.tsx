@@ -119,7 +119,7 @@ export const ContactForm = ({ onSubmit, isSubmitting, submitStatus }: ContactFor
                 animate={{ opacity: 1 }}
                 className="text-green-600 text-center"
               >
-                Message sent successfully! We'll get back to you soon.
+                Message sent successfully! We&apos;ll get back to you soon.
               </motion.p>
             )}
             {submitStatus === 'error' && (

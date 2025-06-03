@@ -28,7 +28,7 @@ export const TestimonialCard = ({ testimonial, index }: TestimonialCardProps) =>
           />
         ))}
       </div>
-      <blockquote className="text-gray-600 mb-6">"{quote}"</blockquote>
+      <blockquote className="text-gray-600 mb-6">&quot;{quote}&quot;</blockquote>
       <div className="flex items-center gap-4">
         <div className="relative w-12 h-12 rounded-full overflow-hidden">
           <Image
