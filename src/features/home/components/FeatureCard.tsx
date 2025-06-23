@@ -27,8 +27,8 @@ export const FeatureCard = ({ feature, index }: FeatureCardProps) => {
     >
       <Link href={feature.link} className="block">
         <div className="flex flex-col items-center text-center">
-          <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors duration-300">
-            {Icon && <Icon className="w-8 h-8 text-blue-500" />}
+          <div className="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary-100 transition-colors duration-300">
+            {Icon && <Icon className="w-8 h-8 text-primary-500" />}
           </div>
           <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
           <p className="text-gray-600">{feature.description}</p>

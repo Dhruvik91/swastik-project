@@ -29,7 +29,7 @@ export const OfficeLocationCard = ({ location, index }: OfficeLocationCardProps)
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-1">{city}</h3>
-        <p className="text-blue-500 mb-4">{country}</p>
+        <p className="text-primary-500 mb-4">{country}</p>
         <div className="flex items-start gap-3">
           <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0 mt-1" />
           <p className="text-gray-600">{address}</p>

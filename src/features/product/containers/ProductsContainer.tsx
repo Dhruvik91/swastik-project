@@ -6,7 +6,7 @@ export const ProductsContainer = () => {
     return (
         <div className="min-h-screen bg-gray-50">
           {/* Hero Section */}
-          <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+          <section className="relative py-20 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
             <div className="absolute inset-0 overflow-hidden">
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&auto=format&fit=crop&q=60')] bg-cover bg-center opacity-10" />
             </div>

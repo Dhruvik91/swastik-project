@@ -43,7 +43,7 @@ export default function Navigation() {
             transition={{ delay: 0.2 }}
             className="flex-shrink-0"
           >
-            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-secondary-400 bg-clip-text text-transparent">
               Brand
             </Link>
           </motion.div>
@@ -61,8 +61,8 @@ export default function Navigation() {
                     href={item.href}
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                       pathname === item.href
-                        ? 'text-blue-600 bg-blue-50'
-                        : 'text-gray-700 hover:text-blue-500'
+                        ? 'text-primary-600 bg-primary-50'
+                        : 'text-gray-700 hover:text-primary-500'
                     }`}
                   >
                     {item.name}
@@ -76,7 +76,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-500 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-500 focus:outline-none"
             >
               {isOpen ? (
                 <XMarkIcon className="block h-6 w-6" />
@@ -108,8 +108,8 @@ export default function Navigation() {
                     href={item.href}
                     className={`block px-3 py-2 rounded-md text-base font-medium ${
                       pathname === item.href
-                        ? 'text-blue-600 bg-blue-50'
-                        : 'text-gray-700 hover:text-blue-500'
+                        ? 'text-primary-600 bg-primary-50'
+                        : 'text-gray-700 hover:text-primary-500'
                     }`}
                     onClick={() => setIsOpen(false)}
                   >

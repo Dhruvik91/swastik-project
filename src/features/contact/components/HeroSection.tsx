@@ -4,7 +4,7 @@ import { HeroSectionProps } from '../types/contact.types';
 export const HeroSection = ({ title, description }: HeroSectionProps) => {
   return (
     <section className="relative py-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-secondary-50" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

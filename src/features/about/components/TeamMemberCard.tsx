@@ -29,7 +29,7 @@ export const TeamMemberCard = ({ member, index }: TeamMemberCardProps) => {
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-1">{name}</h3>
-        <p className="text-blue-500 mb-4">{role}</p>
+        <p className="text-primary-500 mb-4">{role}</p>
         <p className="text-gray-600 mb-6">{bio}</p>
         <div className="flex gap-4">
           {socialLinks.linkedin && (
@@ -37,7 +37,7 @@ export const TeamMemberCard = ({ member, index }: TeamMemberCardProps) => {
               href={socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-500 transition-colors"
+              className="text-gray-400 hover:text-primary-500 transition-colors"
             >
               <Linkedin className="w-5 h-5" />
             </a>
@@ -47,7 +47,7 @@ export const TeamMemberCard = ({ member, index }: TeamMemberCardProps) => {
               href={socialLinks.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-colors"
+              className="text-gray-400 hover:text-primary-400 transition-colors"
             >
               <Twitter className="w-5 h-5" />
             </a>

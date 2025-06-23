@@ -40,7 +40,7 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+              <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-secondary-400 bg-clip-text text-transparent">
                 Brand
               </Link>
               <p className="mt-4 text-gray-600 text-sm">
@@ -67,7 +67,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-gray-600 hover:text-blue-500 text-sm transition-colors duration-200"
+                      className="text-gray-600 hover:text-primary-500 text-sm transition-colors duration-200"
                     >
                       {link.name}
                     </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-gray-600 hover:text-blue-500 transition-colors duration-200"
+                  className="text-gray-600 hover:text-primary-500 transition-colors duration-200"
                 >
                   <span className="sr-only">{link.name}</span>
                   <span className="text-lg">{link.icon}</span>
