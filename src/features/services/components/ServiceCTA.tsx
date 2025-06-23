@@ -13,10 +13,10 @@ export const ServiceCTA = () => {
           className="bg-gradient-to-r from-gray-700 to-gray-900 rounded-2xl p-12 text-center text-white"
         >
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Start Your Construction Project?
+            {`Ready to Start Your Construction Project?`}
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Get in touch with our experts to discuss your cement and concrete requirements. We'll help you choose the right materials for your project.
+           {` Get in touch with our experts to discuss your cement and concrete requirements. We'll help you choose the right materials for your project.`}
           </p>
           <Link
             href="/contact"
