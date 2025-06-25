@@ -5,6 +5,8 @@ export interface HeroSection {
   ctaText: string;
   ctaLink: string;
   backgroundImage: string;
+  logo?: string;
+  productImages?: string[];
 }
 
 export interface FeatureCard {

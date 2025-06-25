@@ -1,12 +1,17 @@
 import { HeroSection, FeatureCard, Testimonial, Statistic, ServiceHighlight } from './home.types';
 
 export const heroSection: HeroSection = {
-  title: 'Premium Construction Materials for Your Projects',
-  subtitle: 'Your Trusted Partner in Construction',
-  description: 'We provide high-quality cement and concrete products for all your construction needs, backed by decades of industry expertise.',
-  ctaText: 'Explore Products',
-  ctaLink: '/products',
-  backgroundImage: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&auto=format&fit=crop&q=60',
+  title: 'SWASTIK Build Ready Mix Plaster',
+  subtitle: 'Cementing Relationships',
+  description: 'A carefully proportioned blend of high-quality raw materials for excellent workability, superior finish, and time-saving application. Trusted for all masonry and general-purpose plastering works.',
+  ctaText: 'Get a Quote',
+  ctaLink: '/contact',
+  backgroundImage: '/images/swastikproduct2-removebg-preview.png',
+  logo: '',
+  productImages: [
+    '/images/swastikproduct2-removebg-preview.png',
+    '/images/swastikproduct3-removebg-preview.png',
+  ],
 };
 
 export const features: FeatureCard[] = [
