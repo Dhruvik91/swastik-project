@@ -42,7 +42,7 @@ export const ServiceCard = ({ title, description, icon, features, image, index }
           {features.map((feature) => (
             <li key={feature} className="flex items-center text-gray-600">
               <svg
-                className="h-5 w-5 text-blue-500 mr-3"
+                className="h-5 w-5 text-primary-500 mr-3"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"

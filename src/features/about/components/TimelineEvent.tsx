@@ -16,9 +16,9 @@ export const TimelineEvent = ({ event, index, isLast = false }: TimelineEventPro
       className="relative pl-8 pb-12"
     >
       {!isLast && (
-        <div className="absolute left-4 top-8 bottom-0 w-0.5 bg-blue-200" />
+        <div className="absolute left-4 top-8 bottom-0 w-0.5 bg-primary-200" />
       )}
-      <div className="absolute left-0 top-2 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">
+      <div className="absolute left-0 top-2 w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">
         {event.year}
       </div>
       <div className="bg-white rounded-2xl shadow-lg p-6">

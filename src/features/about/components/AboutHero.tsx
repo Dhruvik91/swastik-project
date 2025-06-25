@@ -18,7 +18,7 @@ export const AboutHero = ({ data }: AboutHeroProps) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-xl font-medium text-blue-500 mb-4">{subtitle}</h2>
+            <h2 className="text-xl font-medium text-primary-500 mb-4">{subtitle}</h2>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">{title}</h1>
             <p className="text-xl text-gray-600 mb-8">{description}</p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
@@ -30,7 +30,7 @@ export const AboutHero = ({ data }: AboutHeroProps) => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-3xl font-bold text-blue-500 mb-2">{stat.value}</div>
+                  <div className="text-3xl font-bold text-primary-500 mb-2">{stat.value}</div>
                   <div className="text-sm text-gray-600">{stat.label}</div>
                 </motion.div>
               ))}

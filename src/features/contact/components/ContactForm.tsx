@@ -44,7 +44,7 @@ export const ContactForm = ({ onSubmit, isSubmitting, submitStatus }: ContactFor
                 type="text"
                 id="name"
                 name="name"
-                className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 ${
+                className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200 ${
                   errors.name && touched.name ? 'border-red-500' : 'border-gray-300'
                 }`}
                 placeholder="Your name"
@@ -60,7 +60,7 @@ export const ContactForm = ({ onSubmit, isSubmitting, submitStatus }: ContactFor
                 type="email"
                 id="email"
                 name="email"
-                className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 ${
+                className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200 ${
                   errors.email && touched.email ? 'border-red-500' : 'border-gray-300'
                 }`}
                 placeholder="your@email.com"
@@ -76,7 +76,7 @@ export const ContactForm = ({ onSubmit, isSubmitting, submitStatus }: ContactFor
                 type="text"
                 id="subject"
                 name="subject"
-                className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 ${
+                className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200 ${
                   errors.subject && touched.subject ? 'border-red-500' : 'border-gray-300'
                 }`}
                 placeholder="How can we help?"
@@ -93,7 +93,7 @@ export const ContactForm = ({ onSubmit, isSubmitting, submitStatus }: ContactFor
                 id="message"
                 name="message"
                 rows={4}
-                className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 ${
+                className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200 ${
                   errors.message && touched.message ? 'border-red-500' : 'border-gray-300'
                 }`}
                 placeholder="Your message..."
@@ -107,7 +107,7 @@ export const ContactForm = ({ onSubmit, isSubmitting, submitStatus }: ContactFor
               className={`w-full px-6 py-3 text-white font-medium rounded-md transition-all duration-200 ${
                 isSubmitting
                   ? 'bg-gray-400 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 shadow-lg hover:shadow-xl'
+                  : 'bg-gradient-to-r from-primary-500 to-secondary-400 hover:from-primary-600 hover:to-secondary-500 shadow-lg hover:shadow-xl'
               }`}
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}

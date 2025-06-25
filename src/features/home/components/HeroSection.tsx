@@ -32,7 +32,7 @@ export const HeroSection = ({ data }: HeroSectionProps) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl sm:text-2xl font-medium text-blue-400 mb-4"
+            className="text-xl sm:text-2xl font-medium text-primary-400 mb-4"
           >
             {subtitle}
           </motion.h2>
@@ -59,7 +59,7 @@ export const HeroSection = ({ data }: HeroSectionProps) => {
           >
             <Link
               href={ctaLink}
-              className="inline-block px-8 py-4 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition-colors duration-300 shadow-lg hover:shadow-xl"
+              className="inline-block px-8 py-4 bg-primary-500 text-white font-medium rounded-lg hover:bg-primary-600 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
               {ctaText}
             </Link>

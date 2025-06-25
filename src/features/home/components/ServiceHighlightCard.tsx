@@ -41,7 +41,7 @@ export const ServiceHighlightCard = ({ service, index }: ServiceHighlightCardPro
         </ul>
         <Link
           href={ctaLink}
-          className="inline-block px-6 py-3 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition-colors duration-300"
+          className="inline-block px-6 py-3 bg-primary-500 text-white font-medium rounded-lg hover:bg-primary-600 transition-colors duration-300"
         >
           {ctaText}
         </Link>

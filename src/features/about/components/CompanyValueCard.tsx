@@ -26,8 +26,8 @@ export const CompanyValueCard = ({ value, index }: CompanyValueCardProps) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="bg-white rounded-2xl shadow-lg p-8 text-center"
     >
-      <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-50 rounded-2xl mb-6">
-        {Icon && <Icon className="w-8 h-8 text-blue-500" />}
+      <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-50 rounded-2xl mb-6">
+        {Icon && <Icon className="w-8 h-8 text-primary-500" />}
       </div>
       <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
       <p className="text-gray-600">{value.description}</p>

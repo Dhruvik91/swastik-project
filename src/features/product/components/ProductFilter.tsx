@@ -59,7 +59,7 @@ export const ProductFilter = ({ categories, onFilterChange, currentFilter }: Pro
                   onClick={() => handleCategoryChange(category.id)}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                     currentFilter.category === category.id
-                      ? 'bg-blue-500 text-white'
+                      ? 'bg-primary-500 text-white'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -78,7 +78,7 @@ export const ProductFilter = ({ categories, onFilterChange, currentFilter }: Pro
                 placeholder="Min"
                 value={currentFilter.minPrice || ''}
                 onChange={(e) => handlePriceChange(Number(e.target.value), currentFilter.maxPrice)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
               />
               <span className="text-gray-500">to</span>
               <input
@@ -86,7 +86,7 @@ export const ProductFilter = ({ categories, onFilterChange, currentFilter }: Pro
                 placeholder="Max"
                 value={currentFilter.maxPrice || ''}
                 onChange={(e) => handlePriceChange(currentFilter.minPrice, Number(e.target.value))}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
               />
             </div>
           </div>
@@ -99,7 +99,7 @@ export const ProductFilter = ({ categories, onFilterChange, currentFilter }: Pro
                 onClick={() => handleSortChange('price', 'asc')}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                   currentFilter.sortBy === 'price' && currentFilter.sortOrder === 'asc'
-                    ? 'bg-blue-500 text-white'
+                    ? 'bg-primary-500 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -109,7 +109,7 @@ export const ProductFilter = ({ categories, onFilterChange, currentFilter }: Pro
                 onClick={() => handleSortChange('price', 'desc')}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                   currentFilter.sortBy === 'price' && currentFilter.sortOrder === 'desc'
-                    ? 'bg-blue-500 text-white'
+                    ? 'bg-primary-500 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -119,7 +119,7 @@ export const ProductFilter = ({ categories, onFilterChange, currentFilter }: Pro
                 onClick={() => handleSortChange('rating', 'desc')}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                   currentFilter.sortBy === 'rating'
-                    ? 'bg-blue-500 text-white'
+                    ? 'bg-primary-500 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -129,7 +129,7 @@ export const ProductFilter = ({ categories, onFilterChange, currentFilter }: Pro
                 onClick={() => handleSortChange('newest', 'desc')}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                   currentFilter.sortBy === 'newest'
-                    ? 'bg-blue-500 text-white'
+                    ? 'bg-primary-500 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >

@@ -16,7 +16,7 @@ export const ProcessCard = ({ title, description, icon, index }: ProcessCardProp
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="bg-white p-8 rounded-2xl shadow-lg relative"
     >
-      <div className="absolute -top-4 -left-4 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
+      <div className="absolute -top-4 -left-4 w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center text-white text-xl font-bold">
         {index + 1}
       </div>
       <div className="text-4xl mb-4">{icon}</div>
